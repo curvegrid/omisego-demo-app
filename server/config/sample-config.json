@@ -1,0 +1,10 @@
+// 1. Copy this file to config.json
+// 2. Open config.json and add your MultiBaas host and API key
+// 3. Delete these comments
+// 4. DO NOT PUT YOUR HOST OR API KEY IN THIS FILE AND CHECK IT BACK INTO SOURCE CONTROL!
+// 5. DO NOT CHECK config.json INTO SOURCE CONTROL - KEEP YOUR API KEY SECRET!
+
+{
+    "host":"",
+    "apiKey":""
+}
