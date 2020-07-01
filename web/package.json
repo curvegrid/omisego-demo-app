@@ -1,7 +1,7 @@
 {
   "name": "omisego-demo-app",
   "version": "1.0.0",
-  "description": "OmiseGO Plasma with MultiBaas Demo App",
+  "description": "OMG Network with MultiBaas Demo App",
   "repository": "git@github.com:curvegrid/omisego-demo-app.git",
   "author": "curvegrid.com",
   "license": "MIT",
