@@ -7,11 +7,11 @@
 <script>
 // Copyright (c) 2020 Curvegrid Inc.
 import { ethers } from 'ethers';
-import OMG from './OMG.vue';
+import omg from './OMG.vue';
 
 export default {
   components: {
-    OMG,
+    omg,
   },
   data() {
     return {
