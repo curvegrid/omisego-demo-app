@@ -1,17 +1,17 @@
 <template>
   <v-app>
-    <omisego />
+    <omg />
   </v-app>
 </template>
 
 <script>
 // Copyright (c) 2020 Curvegrid Inc.
 import { ethers } from 'ethers';
-import Omisego from './Omisego.vue';
+import OMG from './Omisego.vue';
 
 export default {
   components: {
-    Omisego,
+    OMG,
   },
   data() {
     return {
