@@ -353,7 +353,7 @@ export default {
       try {
         exitData = await this.childChain.getExitData(utxo);
         params = {
-          args: [[exitData.utxo_pos, `${exitData.txbytes}`, `${exitData.proof}`]],
+          args: [[exitData.utxo_pos.toString(), `${exitData.txbytes}`, `${exitData.proof}`]],
           from: signerAddress,
           signer: signerAddress,
           value: this.standardExitBondSize,
