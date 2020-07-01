@@ -1,16 +1,16 @@
-# OmiseGO Plasma with MultiBaas Demo App
+# OMG Network with MultiBaas Demo App
 
-MultiBaas provides a simple interface for interacting with smart contracts on the Ethereum network, and it can also simplify building on OmiseGO's Plasma network. This demo application can be used as a starting point for building a DApp on OmiseGO with MultiBaas.
+MultiBaas provides a simple interface for interacting with smart contracts on the Ethereum network, and it can also simplify building on the OMG Network. This demo application can be used as a starting point for building a DApp on the OMG Network with MultiBaas.
 
-![OmiseGO MultiBaas demo app architecture](omisego-multibaas-demo-app-architecture.png)
+![OMG Network MultiBaas demo app architecture](omg-multibaas-demo-app-architecture.png)
 
-This demo app is built on [Vue.js](https://vuejs.org/), with custom JavaScript for interacting with the MultiBaas blockchain middleware and OmiseGO Plasma child chain. At this point, composing transactions requires the `omg-js` library, which the front-end calls. In the near future, MultiBaas will add back-end support for composing OmiseGO Plasma child chain transactions directly, much as it does for Ethereum.
+This demo app is built on [Vue.js](https://vuejs.org/), with custom JavaScript for interacting with the MultiBaas blockchain middleware and OMG Network child chain. At this point, composing transactions requires the `omg-js` library, which the front-end calls. In the near future, MultiBaas will add back-end support for composing OMG Network transactions directly, much as it does for Ethereum.
 
 MultiBaas requires TLS/SSL (HTTPS), and so we use a basic HTTP-to-HTTPS proxy for development purposes on localhost. The MultiBaas API key sits in the proxy server.
 
 Here's a screenshot of the demo app running in a web browser:
 
-![OmiseGO MultiBaas demo app ready](omisego-app-ready.png)
+![OMG Network MultiBaas demo app ready](omg-app-ready.png)
 
 # Dependencies
 - [node.js](https://nodejs.org/)
@@ -23,7 +23,8 @@ Here's a screenshot of the demo app running in a web browser:
 # Setup
 1. Run `yarn install` in both the `server` and `web` directories
 2. Create an API key on your MultiBaas Ropsten deployment
-3. In your MultiBaas deployment, ensure that the `Erc20Vault`, `EthVault`, `PaymentExitGame` and `PlasmaFramework` contracts are linked to their Ropsten addresses as detailed by [OmiseGO](https://docs.omg.network/network-connection-details).
+3. In your MultiBaas deployment, ensure that the `Erc20Vault`, `EthVault`, `PaymentExitGame` and `PlasmaFramework` contracts are linked to their Ropsten addresses as detailed by [OMG](https://docs.omg.network/network-connection-details).
+4. Ensure that the front end address of your application is added to the CORS Domains of the MultiBaas deployment. By default, this address is `http://localhost:8080`.
 
 ![link-ethvault-contract](multibaas-link-contract.gif)
 

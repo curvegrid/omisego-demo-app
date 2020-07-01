@@ -5,7 +5,7 @@
         <v-layout wrap>
           <v-flex shrink>
             <h1 class="primary--text">
-              OmiseGO Helper
+              OMG Network Helper
             </h1>
           </v-flex>
         </v-layout>
@@ -145,7 +145,7 @@
           />
           <v-text-field
             v-model="childChainBalance"
-            label="OmiseGO Network Balance (Wei)"
+            label="OMG Network Balance (Wei)"
             readonly
           />
         </div>
@@ -239,7 +239,7 @@ export default {
         this.paymentExitGameDeployedAddress = this.paymentExitGameContract.instances[0].address;
         this.plasmaFrameworkDeployedAddress = this.plasmaFrameworkContract.instances[0].address;
       } catch (error) {
-        this.$refs.topAlert.addError('Failed to get deployed addresses. Please ensure that the OmiseGO contracts are linked to their Ropsten addresses on MultiBaas');
+        this.$refs.topAlert.addError('Failed to get deployed addresses. Please ensure that the OMG contracts are linked to their Ropsten addresses on MultiBaas');
       }
     },
     async setStandardExitBondSize() {
@@ -340,7 +340,7 @@ export default {
         alert.addSuccess(`Transaction index: ${transactionReceipt.txindex}`);
       } catch (error) {
         console.warn(error);
-        alert.addError('Failed to send OmiseGO transaction. Please see the console for details.');
+        alert.addError('Failed to send OMG Network transaction. Please see the console for details.');
       }
       loader.hide();
     },
@@ -353,7 +353,7 @@ export default {
       try {
         exitData = await this.childChain.getExitData(utxo);
         params = {
-          args: [[exitData.utxo_pos, `${exitData.txbytes}`, `${exitData.proof}`]],
+          args: [[exitData.utxo_pos.toString(), `${exitData.txbytes}`, `${exitData.proof}`]],
           from: signerAddress,
           signer: signerAddress,
           value: this.standardExitBondSize,
