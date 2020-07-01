@@ -24,6 +24,7 @@ Here's a screenshot of the demo app running in a web browser:
 1. Run `yarn install` in both the `server` and `web` directories
 2. Create an API key on your MultiBaas Ropsten deployment
 3. In your MultiBaas deployment, ensure that the `Erc20Vault`, `EthVault`, `PaymentExitGame` and `PlasmaFramework` contracts are linked to their Ropsten addresses as detailed by [OMG](https://docs.omg.network/network-connection-details).
+4. Ensure that the front end address of your application is added to the CORS Domains of the MultiBaas deployment. By default, this address is `http://localhost:8080`.
 
 ![link-ethvault-contract](multibaas-link-contract.gif)
 
