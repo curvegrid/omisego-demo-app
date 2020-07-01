@@ -2,7 +2,7 @@
 
 MultiBaas provides a simple interface for interacting with smart contracts on the Ethereum network, and it can also simplify building on the OMG Network. This demo application can be used as a starting point for building a DApp on the OMG Network with MultiBaas.
 
-![OMG Network MultiBaas demo app architecture](omisego-multibaas-demo-app-architecture.png)
+![OMG Network MultiBaas demo app architecture](omg-multibaas-demo-app-architecture.png)
 
 This demo app is built on [Vue.js](https://vuejs.org/), with custom JavaScript for interacting with the MultiBaas blockchain middleware and OMG Network child chain. At this point, composing transactions requires the `omg-js` library, which the front-end calls. In the near future, MultiBaas will add back-end support for composing OMG Network transactions directly, much as it does for Ethereum.
 
@@ -10,7 +10,7 @@ MultiBaas requires TLS/SSL (HTTPS), and so we use a basic HTTP-to-HTTPS proxy fo
 
 Here's a screenshot of the demo app running in a web browser:
 
-![OMG Network MultiBaas demo app ready](omisego-app-ready.png)
+![OMG Network MultiBaas demo app ready](omg-app-ready.png)
 
 # Dependencies
 - [node.js](https://nodejs.org/)
